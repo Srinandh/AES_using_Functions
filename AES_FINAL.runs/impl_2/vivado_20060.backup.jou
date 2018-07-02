@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Apr 24 15:32:45 2018
+# Process ID: 20060
+# Current directory: C:/vivado/AES_FINAL/AES_FINAL.runs/impl_2
+# Command line: vivado.exe -log AES_FINAL.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AES_FINAL.tcl -notrace
+# Log file: C:/vivado/AES_FINAL/AES_FINAL.runs/impl_2/AES_FINAL.vdi
+# Journal file: C:/vivado/AES_FINAL/AES_FINAL.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source AES_FINAL.tcl -notrace

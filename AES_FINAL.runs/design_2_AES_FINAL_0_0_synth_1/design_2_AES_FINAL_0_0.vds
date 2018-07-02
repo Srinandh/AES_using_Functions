@@ -1,0 +1,1154 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Apr 24 16:11:40 2018
+# Process ID: 6372
+# Current directory: C:/vivado/AES_FINAL/AES_FINAL.runs/design_2_AES_FINAL_0_0_synth_1
+# Command line: vivado.exe -log design_2_AES_FINAL_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_AES_FINAL_0_0.tcl
+# Log file: C:/vivado/AES_FINAL/AES_FINAL.runs/design_2_AES_FINAL_0_0_synth_1/design_2_AES_FINAL_0_0.vds
+# Journal file: C:/vivado/AES_FINAL/AES_FINAL.runs/design_2_AES_FINAL_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_2_AES_FINAL_0_0.tcl -notrace
+Command: synth_design -top design_2_AES_FINAL_0_0 -part xc7k160tfbv484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6804 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 354.918 ; gain = 101.449
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_2_AES_FINAL_0_0' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ip/design_2_AES_FINAL_0_0/synth/design_2_AES_FINAL_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'AES_FINAL' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/AES_FINAL.vhd:34' bound to instance 'U0' of component 'AES_FINAL' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ip/design_2_AES_FINAL_0_0/synth/design_2_AES_FINAL_0_0.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'AES_FINAL' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/AES_FINAL.vhd:40]
+INFO: [Synth 8-3491] module 'controller' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/controller.vhd:34' bound to instance 'x1' of component 'controller' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/AES_FINAL.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'controller' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/controller.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'controller' (1#1) [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/controller.vhd:39]
+INFO: [Synth 8-3491] module 'datapath' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/datapath.vhd:34' bound to instance 'x2' of component 'datapath' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/AES_FINAL.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'datapath' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/datapath.vhd:38]
+INFO: [Synth 8-3491] module 'encrypt' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/encrypt.vhd:34' bound to instance 'x1' of component 'encrypt' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/datapath.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'encrypt' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/encrypt.vhd:40]
+WARNING: [Synth 8-614] signal 'a' is read in the process but is not in the sensitivity list [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/encrypt.vhd:473]
+WARNING: [Synth 8-614] signal 'key' is read in the process but is not in the sensitivity list [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/encrypt.vhd:473]
+INFO: [Synth 8-256] done synthesizing module 'encrypt' (2#1) [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/encrypt.vhd:40]
+INFO: [Synth 8-3491] module 'decrypt' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:34' bound to instance 'x2' of component 'decrypt' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/datapath.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'decrypt' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:40]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+INFO: [Synth 8-226] default block is never used [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:80]
+WARNING: [Synth 8-614] signal 'a' is read in the process but is not in the sensitivity list [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:739]
+WARNING: [Synth 8-614] signal 'key' is read in the process but is not in the sensitivity list [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:739]
+INFO: [Synth 8-256] done synthesizing module 'decrypt' (3#1) [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/decrypt.vhd:40]
+INFO: [Synth 8-3491] module 'dh_128' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:34' bound to instance 'x3' of component 'dh_128' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/datapath.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'dh_128' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:39]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x1' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:39]
+INFO: [Synth 8-3491] module 'key_gen1' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/key_gen1.vhd:34' bound to instance 'x1' of component 'key_gen1' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'key_gen1' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/key_gen1.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'key_gen1' (4#1) [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/key_gen1.vhd:39]
+INFO: [Synth 8-3491] module 'key_gen2' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/key_gen2.vhd:34' bound to instance 'x2' of component 'key_gen2' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'key_gen2' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/key_gen2.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'key_gen2' (5#1) [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/key_gen2.vhd:39]
+WARNING: [Synth 8-614] signal 'p2' is read in the process but is not in the sensitivity list [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'dh' (6#1) [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:39]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x2' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:47]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x3' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:48]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x4' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:49]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x5' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:50]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x6' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:51]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x7' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:52]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x8' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:53]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x9' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:54]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x10' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:55]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x11' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:56]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x12' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:57]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x13' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:58]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x14' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:59]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x15' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:60]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x16' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:61]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x17' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:62]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x18' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:63]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x19' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:64]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x20' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:65]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x21' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:66]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x22' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:67]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x23' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:68]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x24' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:69]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x25' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:70]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x26' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:71]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x27' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:72]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x28' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:73]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x29' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:74]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x30' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:75]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x31' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:76]
+INFO: [Synth 8-3491] module 'dh' declared at 'c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/key_gen1/key_gen1.srcs/sources_1/new/dh.vhd:34' bound to instance 'x32' of component 'dh' [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'dh_128' (7#1) [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/dh_128.vhd:39]
+WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/datapath.vhd:58]
+WARNING: [Synth 8-614] signal 'de' is read in the process but is not in the sensitivity list [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/datapath.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (8#1) [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/datapath.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'AES_FINAL' (9#1) [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ipshared/96eb/AES_FINAL/AES_FINAL.srcs/sources_1/new/AES_FINAL.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'design_2_AES_FINAL_0_0' (10#1) [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ip/design_2_AES_FINAL_0_0/synth/design_2_AES_FINAL_0_0.vhd:68]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:33 ; elapsed = 00:01:44 . Memory (MB): peak = 904.742 ; gain = 651.273
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:43 ; elapsed = 00:01:55 . Memory (MB): peak = 904.742 ; gain = 651.273
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k160tfbv484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ip/design_2_AES_FINAL_0_0/AES_FINAL/AES_FINAL.srcs/constrs_1/new/CONST.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/vivado/AES_FINAL/AES_FINAL.srcs/sources_1/bd/design_2/ip/design_2_AES_FINAL_0_0/AES_FINAL/AES_FINAL.srcs/constrs_1/new/CONST.xdc] for cell 'U0'
+Parsing XDC File [C:/vivado/AES_FINAL/AES_FINAL.runs/design_2_AES_FINAL_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/vivado/AES_FINAL/AES_FINAL.runs/design_2_AES_FINAL_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.327 . Memory (MB): peak = 1114.988 ; gain = 0.551
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:22 ; elapsed = 00:02:39 . Memory (MB): peak = 1114.988 ; gain = 861.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tfbv484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:22 ; elapsed = 00:02:39 . Memory (MB): peak = 1114.988 ; gain = 861.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/vivado/AES_FINAL/AES_FINAL.runs/design_2_AES_FINAL_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:22 ; elapsed = 00:02:39 . Memory (MB): peak = 1114.988 ; gain = 861.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:32 ; elapsed = 00:03:58 . Memory (MB): peak = 1114.988 ; gain = 861.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |datapath__GB0 |           1|     47860|
+|2     |datapath__GB1 |           1|     30996|
+|3     |controller    |           1|         5|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 20    
+	   2 Input     32 Bit         XORs := 60    
+	   2 Input      8 Bit         XORs := 352   
+	   2 Input      1 Bit         XORs := 1096  
+	   3 Input      1 Bit         XORs := 497   
+	   4 Input      1 Bit         XORs := 466   
+	   6 Input      1 Bit         XORs := 28    
+	   5 Input      1 Bit         XORs := 242   
+	  11 Input      1 Bit         XORs := 144   
+	  15 Input      1 Bit         XORs := 144   
+	  20 Input      1 Bit         XORs := 144   
+	  24 Input      1 Bit         XORs := 144   
+	  23 Input      1 Bit         XORs := 144   
+	  16 Input      1 Bit         XORs := 144   
+	  17 Input      1 Bit         XORs := 144   
+	   9 Input      1 Bit         XORs := 144   
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module encrypt 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 10    
+	   2 Input     32 Bit         XORs := 30    
+	   2 Input      8 Bit         XORs := 176   
+	   2 Input      1 Bit         XORs := 664   
+	   3 Input      1 Bit         XORs := 497   
+	   4 Input      1 Bit         XORs := 466   
+	   6 Input      1 Bit         XORs := 28    
+	   5 Input      1 Bit         XORs := 242   
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module decrypt 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 10    
+	   2 Input     32 Bit         XORs := 30    
+	   2 Input      8 Bit         XORs := 176   
+	   2 Input      1 Bit         XORs := 432   
+	  11 Input      1 Bit         XORs := 144   
+	  15 Input      1 Bit         XORs := 144   
+	  20 Input      1 Bit         XORs := 144   
+	  24 Input      1 Bit         XORs := 144   
+	  23 Input      1 Bit         XORs := 144   
+	  16 Input      1 Bit         XORs := 144   
+	  17 Input      1 Bit         XORs := 144   
+	   9 Input      1 Bit         XORs := 144   
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module datapath 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:11:15 ; elapsed = 00:12:20 . Memory (MB): peak = 1584.984 ; gain = 1331.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|encrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | sbox       | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
+|decrypt     | inv_sbox   | 256x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |datapath__GB0 |           1|     51053|
+|2     |datapath__GB1 |           1|     37252|
+|3     |controller    |           1|         4|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:11:35 ; elapsed = 00:12:43 . Memory (MB): peak = 1584.984 ; gain = 1331.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:11:35 ; elapsed = 00:12:43 . Memory (MB): peak = 1584.984 ; gain = 1331.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |datapath__GB0 |           1|     51053|
+|2     |datapath__GB1 |           1|     37252|
+|3     |controller    |           1|         4|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:12:23 ; elapsed = 00:13:42 . Memory (MB): peak = 2808.031 ; gain = 2554.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:12:28 ; elapsed = 00:13:50 . Memory (MB): peak = 2808.031 ; gain = 2554.563
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:12:29 ; elapsed = 00:13:51 . Memory (MB): peak = 2808.031 ; gain = 2554.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:12:33 ; elapsed = 00:13:55 . Memory (MB): peak = 2808.031 ; gain = 2554.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:20:41 ; elapsed = 00:22:11 . Memory (MB): peak = 2808.031 ; gain = 2554.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:20:43 ; elapsed = 00:22:13 . Memory (MB): peak = 2808.031 ; gain = 2554.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:20:43 ; elapsed = 00:22:13 . Memory (MB): peak = 2808.031 ; gain = 2554.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   288|
+|2     |LUT1   |     2|
+|3     |LUT2   |  2637|
+|4     |LUT3   |  1051|
+|5     |LUT4   |  1600|
+|6     |LUT5   |  2348|
+|7     |LUT6   | 22701|
+|8     |MUXF7  |  2645|
+|9     |MUXF8  |   875|
+|10    |FDCE   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           | 34149|
+|2     |  U0     |AES_FINAL  | 34149|
+|3     |    x1   |controller |  4435|
+|4     |    x2   |datapath   | 27762|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:20:43 ; elapsed = 00:22:13 . Memory (MB): peak = 2808.031 ; gain = 2554.563
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
